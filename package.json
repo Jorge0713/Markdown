@@ -1,0 +1,35 @@
+{
+  "name": "markdown-editor",
+  "version": "1..0",
+  "description": "Markdown Editor - Electron Projects Chapter 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=true & electron .",
+    "build:macos": "electron-builder --macos --dir",
+    "dist:macos": "electron-builder --macos",
+    "build:linux": "electron-builder --linux --dir",
+    "dist:linux": "electron-builder --linux",
+    "build:windows": "electron-builder --win --dir",
+    "dist:windows": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.my.app.id",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^41.0.4",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
